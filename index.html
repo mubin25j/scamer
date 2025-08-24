@@ -149,8 +149,42 @@
     .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 8px var(--ok); }
 
     @media (max-width: 880px) {
-      .id-card { grid-template-columns: 1fr; }
-    }
+  body {
+    padding: 12px;
+  }
+  .id-wrap {
+    width: 100%;
+  }
+  .id-card {
+    grid-template-columns: 1fr; /* stack columns vertically */
+    padding: 16px;
+    gap: 12px;
+  }
+  .kv {
+    grid-template-columns: 1fr; /* key/value stacked */
+  }
+  .kv .label {
+    font-size: 12px;
+  }
+  .kv .value {
+    font-size: 14px;
+  }
+  .media {
+    grid-auto-rows: auto;
+  }
+  .frame {
+    min-height: 200px;
+  }
+  .map-location iframe {
+    height: 200px;
+  }
+  .bottom {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 11px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -235,4 +269,5 @@
   </div>
 </body>
 </html>
+
 
